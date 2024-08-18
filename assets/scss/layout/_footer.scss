@@ -1,0 +1,123 @@
+//  footer 
+.bg-footer{
+  background: $primary;
+  padding-top: 48px;
+  padding-bottom: 32px;
+}
+
+.footer-list-link li{
+  margin-right: 48px;
+  transition: 0.5s;
+}
+
+.footer-list-link li:hover{
+  font-weight: bold;
+}
+
+.footer-list-social-link img{
+  width: 48px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.margin-left-img{
+  margin-left: 32px;
+}
+
+.footer-list-social-link img:hover{
+  transform: scale(1.1);
+}
+
+.footer-list-contact{
+  margin-top: 45px;
+}
+
+.footer-list-contact img{
+  width: 36px;
+  margin-right: 22px;
+}
+
+.footer-list-contact li{
+  font-size: 36px;
+  color: #FFF;
+}
+
+.border-top{
+  border-top: 1px solid #FFF;
+  padding-top: 32px;
+  margin-top: 32px;
+}
+
+.footer-list-copyright p{
+  color: #FFF;
+}
+
+.footer-list-copyright li{
+  margin-left: 48px;
+  font-size: 14px;
+}
+
+.footer-list-copyright li:hover{
+  font-weight: bold;
+}
+
+@media (max-width:768px){
+  .footer {
+      .container{
+          max-width: 720px;
+      }
+      .footer-list-social-link img{
+          width: 40px;
+      }
+      .margin-left-img{
+          margin-left: 16px;
+      }
+      .footer-list-link li{
+          margin-right: 16px;
+          margin-top: 10px;
+      }
+      .footer-list-contact li{
+          font-size: 24px;
+      }
+  }
+
+}
+
+@media (max-width:576px){
+  .footer {
+      .container{
+          max-width: 372px;
+      }
+      .footer-list-link{
+          display: none;
+      }
+      .footer-list-contact img{
+          width: 18px;
+      }
+      .footer-list-social-link img{
+          width: 24px;
+      }
+      .footer-list-contact{
+          margin-top: 0px;
+          a{
+              font-size: 16px;
+          }
+          ul{
+              width: 50%;
+          }
+          img{
+              margin-right: 8px;
+          }
+      }
+      .footer-list-copyright{
+          flex-direction: column;
+          ul{
+              flex-direction: column;
+          }
+          li{
+              margin-top: 8px;
+              margin-left: 0px;
+          }
+      }
+  }
+}

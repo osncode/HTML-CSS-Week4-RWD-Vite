@@ -1,4 +1,4 @@
-// banner
+/* banner */
 .bg-banner{
   background-image: url("../assets/images/home-header.png");
   height: 787px;
@@ -34,13 +34,13 @@
   font-weight: bold;
 }
 
-@media (max-width:992px){
+@include lg{
   .bg-banner{
       background-image: url("../images/home-header-sm.png");
   }
 }
 
-@media (max-width:599px){
+@include sm{
   .bg-banner{
       height: 396px;
   }
@@ -85,7 +85,7 @@
   margin-top: 24px;
 }
 
-@media (max-width:992px){
+@include lg{
   .intro{
       .container{
           max-width: 720px;
@@ -96,7 +96,7 @@
   }
 }
 
-@media (max-width:576px){
+@include sm{
   .intro{
       .container{
           max-width: 372px;
@@ -136,7 +136,7 @@
   max-width: calc(33.3333% - 12px);
 }
 
-@media (max-width:992px){
+@include lg{
   .classic{
       .container{
           max-width: 720px;
@@ -152,7 +152,7 @@
   }
 }
 
-@media (max-width:576px){
+@include sm{
   .classic{
       padding: 40px 0px;
       .container{
@@ -204,7 +204,7 @@
 
 }
 
-@media (max-width:768px){
+@include md{
   .bg-co-branded{
       background-image: url("../images/index-bg-md.png");
   }
@@ -219,7 +219,7 @@
   }
 }
 
-@media (max-width:576px){
+@include sm{
   .bg-co-branded{
       background-image: url("../images/index-bg-sm.png");
   }
@@ -288,7 +288,7 @@
   color:#707070;
 }
 
-@media (max-width:992px){
+@include lg{
   .recommend-list{
       flex-wrap: wrap;
       .card{
@@ -298,7 +298,7 @@
   }
 }
 
-@media (max-width:576px){
+@include sm{
   .recommend{
       padding: 40px 0px;
       .container{
@@ -406,7 +406,7 @@
   text-align: center;
 }
 
-@media (max-width:768px){
+@include md{
       .contact {
           .container{
           max-width: 720px;
@@ -417,7 +417,7 @@
   }
 }
 
-@media (max-width:576px){
+@include sm{
   .contact {
       .container{
           max-width: 372px;

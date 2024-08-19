@@ -61,7 +61,7 @@
   font-weight: bold;
 }
 
-@media (max-width:768px){
+@include md{
   .footer {
       .container{
           max-width: 720px;
@@ -83,7 +83,7 @@
 
 }
 
-@media (max-width:576px){
+@include sm{
   .footer {
       .container{
           max-width: 372px;

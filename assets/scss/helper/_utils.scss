@@ -49,6 +49,9 @@
 .text-align-right{
     text-align: right;
 }
+.text-align-left{
+    text-align: left;
+}
 
 .pt-8{
     padding-top: 8px;
@@ -86,6 +89,9 @@
     margin-right: 64px;
 }
 
+.ml-8{
+    margin-left: 8px;
+}
 
 .ml-auto{
     margin-left: auto;
@@ -121,6 +127,10 @@
 
 .mb-48{
     margin-bottom: 48px;
+}
+
+.mb-80{
+    margin-bottom: 80px;
 }
 
 .fs-16{

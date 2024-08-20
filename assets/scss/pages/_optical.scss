@@ -29,19 +29,21 @@
     }
     .style-cool-tone{
         display: inline-block;
-        width: 24px;
-        height: 24px;
-        background:$style-cool-tone;
+        a{
+            padding: 12px;
+            background:$style-cool-tone;
+        }
     }
     .style-warm-tone{
         display: inline-block;
-        width: 24px;
-        height: 24px;
-        background:$style-warm-tone;
+        a{
+            padding: 12px;
+            background:$style-warm-tone;
+        }
     }
     .paping{
         margin-bottom: 80px;
-
+        
         a{
             border: 1px solid #555555;
             color:#555555;

@@ -1,0 +1,46 @@
+.frame-nav .container{
+    padding: 0px;
+}
+
+.frame-item {
+    li{
+        text-align: center;
+        width: 432px;
+        border-left: 1px solid #DCDCDC;
+        border-right: 1px solid #DCDCDC;
+        font-size: 32px;
+        font-weight: 500;
+    }
+    a{
+        color: black;
+        padding: 24px 0px;
+    }
+}
+// 預設 border 避免 hover 產生的 border 會出現高度變化的狀況
+.default-border-bottom{
+    border-bottom: 8px inset $primary;
+}
+
+.frame-item li:hover{
+    border-bottom: 8px solid $primary;
+}
+
+@include lg{
+    .frame-item {
+        li{
+            max-width: calc(100% / 3);
+            font-size: 24px;
+        }
+        a{
+            padding: 16px 0px;
+        }
+    }
+}
+
+@include sm{
+    .frame-item li{
+        font-size: 16px;
+    }
+}
+
+

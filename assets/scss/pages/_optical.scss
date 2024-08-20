@@ -42,24 +42,24 @@
     .paping{
         margin-bottom: 80px;
 
-        li{
+        a{
             border: 1px solid #555555;
             color:#555555;
             font-size: 19px;
         }
          
-        li:first-child,li:last-child{
+        a:first-child,a:last-child{
             // 需扣掉 border 1px
             padding: 10px 11px;
         }
-        li:last-child{
+        a:last-child{
             background: #F2F2F2;
         }
-        li:nth-child(n+2):nth-child(-n+6){
+        a:nth-child(n+2):nth-child(-n+6){
             // 需扣掉 border 1px
             padding: 10px 15px;
         }
-        li:nth-child(3){
+        a:nth-child(n+2):nth-child(-n+6):hover{
             color: #FFF;
             background: #000;
         }
@@ -95,7 +95,7 @@
         }
         .paping{
             margin-bottom: 64px;
-            li{
+            a{
                 font-size: 16px;
             }
         }

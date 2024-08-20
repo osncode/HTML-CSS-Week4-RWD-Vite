@@ -16,6 +16,10 @@
         padding: 24px 0px;
     }
 }
+// 預設 border 避免 hover 產生的 border 會出現高度變化的狀況
+.default-border-bottom{
+    border-bottom: 8px solid #FFF;
+}
 
 .frame-item li:hover{
     border-bottom: 8px solid $primary;

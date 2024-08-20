@@ -2,7 +2,7 @@
     width: 50%;
 }
 
-.optical{ 
+.optical-item{ 
     .title{
         margin-top: 80px;
         font-size: 42px;
@@ -12,8 +12,12 @@
         font-size: 32px;
         margin-bottom: 32px;
     }
+    .card-list{
+        justify-content: space-between;
+    }
     .card{
         max-width: calc(25% - 12px);
+        margin-bottom: 80px;
     }
     .model{
         font-size: 24px;
@@ -40,15 +44,20 @@
 
         li{
             border: 1px solid #555555;
+            color:#555555;
+            font-size: 19px;
         }
+         
         li:first-child,li:last-child{
-            padding: 11px 12px;
+            // 需扣掉 border 1px
+            padding: 10px 11px;
         }
         li:last-child{
             background: #F2F2F2;
         }
         li:nth-child(n+2):nth-child(-n+6){
-            padding: 11px 16px;
+            // 需扣掉 border 1px
+            padding: 10px 15px;
         }
         li:nth-child(3){
             color: #FFF;
@@ -57,3 +66,38 @@
     }
 }
 
+@include lg{
+    .optical-item{ 
+        .card-list{
+            flex-wrap: wrap;
+        }
+        .card{
+            max-width: calc(50% - 12px);
+            margin-bottom: 40px;
+        }
+        .paping{
+            margin-top: 40px;
+        }
+    }
+}
+
+@include sm{
+    .optical-item{
+        .title{
+            margin-top: 40px;
+        }
+        .desc{
+            margin-bottom: 24px;
+        }
+        .card{
+            max-width: 100%;
+            margin-bottom: 24px;
+        }
+        .paping{
+            margin-bottom: 64px;
+            li{
+                font-size: 16px;
+            }
+        }
+    }
+}

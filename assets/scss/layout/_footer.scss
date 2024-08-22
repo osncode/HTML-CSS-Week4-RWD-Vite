@@ -5,9 +5,14 @@
   padding-bottom: 32px;
 }
 
-.footer-list-link li{
-  margin-right: 48px;
-  transition: 0.5s;
+.footer-list-link{
+  li{
+    margin-right: 48px;
+    transition: 0.5s;
+  }
+  a{
+    color: #FFF;
+  }
 }
 
 .footer-list-link li:hover{
@@ -30,16 +35,17 @@
 
 .footer-list-contact{
   margin-top: 45px;
-}
-
-.footer-list-contact img{
-  width: 36px;
-  margin-right: 22px;
-}
-
-.footer-list-contact li{
-  font-size: 36px;
-  color: #FFF;
+  li{
+    font-size: 36px;
+    color: #FFF;
+  }
+  a{
+    color: #FFF;
+  }
+  img{
+    width: 36px;
+    margin-right: 22px;
+  }
 }
 
 .border-top{
@@ -48,13 +54,14 @@
   margin-top: 32px;
 }
 
-.footer-list-copyright p{
-  color: #FFF;
-}
-
-.footer-list-copyright li{
-  margin-left: 48px;
-  font-size: 14px;
+.footer-list-copyright{
+  p,a{
+    color: #FFF;
+  }
+  li{
+    margin-left: 48px;
+    font-size: 14px;
+  }
 }
 
 .footer-list-copyright li:hover{

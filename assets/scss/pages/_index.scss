@@ -10,12 +10,15 @@
 .title-banner{
   height: auto;
   padding: 296px 0px;
+  p{
+    font-size: 36px;
+    color:$secondary;
+  }
+  a{
+    color: #FFF;
+  }
 }
 
-.title-banner p{
-  font-size: 36px;
-  color:$secondary;
-}
 
 .h1{
   font-size: 64px;

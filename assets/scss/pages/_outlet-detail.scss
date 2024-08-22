@@ -36,7 +36,7 @@
         margin-bottom: 48px;
     }
     .card{
-        max-width: 526px;
+        max-width: 538px;
         padding: 0px 12px;
     }
     h2{
@@ -44,10 +44,6 @@
         color: #212529;
         font-size: 24px;
         padding: 8px 12px;
-    }
-    a{color: #212529;}
-    a:hover{
-        font-weight: bold;
     }
     .card-body{
         border: 1px solid #00000020;
@@ -62,9 +58,14 @@
         li{
             margin-bottom: 8px;
         }
+        a{color: #212529;}
+        a:hover{
+            font-weight: bold;
+        }
     }
     .map img{
-        max-width: 746px;
+        border: 1px solid #CED4DA;
+        max-width: 758px;
         height: 100%;
     }
 }

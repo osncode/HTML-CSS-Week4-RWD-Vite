@@ -1,5 +1,5 @@
 .outlet{
-    // 加上 card margin-bottom = 80px;
+    // 加上 .card-detail a margin-bottom = 80px;
     padding-bottom: 32px;
     .title h1{
         font-size: 48px;
@@ -12,61 +12,80 @@
     .city-item{
         font-size: 24px;
         margin-bottom: 40px;
-        label{
-            margin-right: 16px;
-
-        }
-        select{
-            // 移除下拉選單箭頭樣式
-            appearance:none;
-            -moz-appearance:none;
-            -webkit-appearance:none;
-            // 修改箭頭樣式
-            background: url("../images/caret-down-fill.svg") no-repeat 96% center transparent;
-            color: #495057;
-            opacity: 0.75;
-            font-size: 18px;
-            width: 298px;
-            height: 38px;
-            border: 1px solid #CED4DA;
-            padding: 0px 12px;
-        }
+    }
+    label{
+        margin-right: 16px;
+    }
+    select{
+        // 移除下拉選單箭頭樣式
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        // 修改箭頭樣式
+        background: url("../images/caret-down-fill.svg") no-repeat 96% center transparent;
+        color: #495057;
+        opacity: 0.75;
+        font-size: 18px;
+        width: 298px;
+        height: 38px;
+        border: 1px solid #CED4DA;
+        padding: 0px 12px;
     }
     .card-list{
         flex-wrap: wrap;
-        .card{
-            max-width: 33.3333%;
-            padding: 0px 12px;
-            .card-detail a{
-                padding: 16px 0px;
-                margin-bottom: 48px;
-                background: #000;
-                color: #FFF;
-                border: 1px solid #00000020;
-                font-size: 19px;
-            }
+    }
+    .card{
+        max-width: 33.3333%;
+        padding: 0px 12px;
+    }
+    .card-detail a{
+        padding: 16px 0px;
+        margin-bottom: 48px;
+        background: #000;
+        color: #FFF;
+        border: 1px solid #00000020;
+        font-size: 19px;  
+    }
+    h2{
+        border: 1px solid #00000020;
+        color: #212529;
+        font-size: 24px;
+        padding: 8px 12px;
+    }
+    a{color: #212529;}
+    .card-body{
+        border: 1px solid #00000020;
+        padding: 16px 12px;
+        span{
+            font-size: 20px;
+            margin-left: 10px;
         }
-        h2{
-            border: 1px solid #00000020;
-            color: #212529;
-            font-size: 24px;
-            padding: 8px 12px;
+        img{
+            padding-bottom: 5px;
         }
-        a{color: #212529;}
-        .card-body{
-            border: 1px solid #00000020;
-            span{
-                font-size: 20px;
-                margin-left: 10px;
-            }
-            padding: 16px 12px;
-            img{
-                padding-bottom: 5px;
-            }
-            li{
-                margin-bottom: 8px;
-            }
+        li{
+            margin-bottom: 8px;
         }
     }
+}
 
+@include lg{
+    .outlet{
+        .card{
+            max-width: 50%;
+        }
+        .card-detail a{
+            margin-bottom: 24px;
+        }
+    // 加上 .card-detail a margin-bottom = 80px;
+        padding-bottom: 56px;
+    }
+}
+
+@include md{
+    .outlet{
+        .card{
+            max-width: 100%;
+        }
+    }
 }

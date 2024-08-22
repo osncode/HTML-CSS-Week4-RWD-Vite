@@ -1,4 +1,4 @@
-.outlet{
+.outlet-detail{
     // 加上 .card-detail a margin-bottom = 80px;
     padding-bottom: 32px;
     .title h1{
@@ -33,18 +33,11 @@
     }
     .card-list{
         flex-wrap: wrap;
+        margin-bottom: 48px;
     }
     .card{
-        max-width: 33.3333%;
+        max-width: 526px;
         padding: 0px 12px;
-    }
-    .card-detail a{
-        padding: 16px 0px;
-        margin-bottom: 48px;
-        background: #000;
-        color: #FFF;
-        border: 1px solid #00000020;
-        font-size: 19px;  
     }
     h2{
         border: 1px solid #00000020;
@@ -70,25 +63,8 @@
             margin-bottom: 8px;
         }
     }
-}
-
-@include lg{
-    .outlet{
-        .card{
-            max-width: 50%;
-        }
-        .card-detail a{
-            margin-bottom: 24px;
-        }
-    // 加上 .card-detail a margin-bottom = 80px;
-        padding-bottom: 56px;
-    }
-}
-
-@include md{
-    .outlet{
-        .card{
-            max-width: 100%;
-        }
+    .map img{
+        max-width: 746px;
+        height: 100%;
     }
 }

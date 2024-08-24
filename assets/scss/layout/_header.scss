@@ -12,12 +12,15 @@
 .header-img img{
   padding: 12px 12px 12px 0px;
   width: 80px; 
+  transition: 0.2s;
+}
+.header-img img:hover{
+  transform: scale(1.1);
 }
 
 .header-list .item{
   text-align: center;
   font-size: 20px;
-  transition: 0.5s;
   margin-left: 52px;
   a{
     color: #FFF;

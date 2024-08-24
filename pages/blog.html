@@ -9,8 +9,38 @@
   <body>
     
     <%- include('./layout/header'); -%>
-
-
+<!-- header -->
+    <header class="bg-blog">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <ul class="blog-nav d-flex">
+              <li><a href="#">最新消息</a></li>
+              <li class="ml-48"><a href="#">特別企劃</a></li>
+              <li class="ml-48"><a href="#">新品上市</a></li>
+              <li class="ml-48"><a href="#">鏡框小知識</a></li>
+              <div class="search-icon ml-auto">
+                <a href="#"><img src="../assets/images/search.svg" alt="search icon"></a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+<!-- main -->
+    <main class="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="title">
+              <h1>部落格</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <%- include('./layout/paping'); -%>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

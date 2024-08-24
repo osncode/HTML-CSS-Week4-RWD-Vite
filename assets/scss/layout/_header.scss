@@ -30,9 +30,13 @@
 }
 
 @include md{
-  .header-list .item{
+  .header-list 
+    .item{
        margin-left: 0px;
   }
+    .border{
+      padding: 12px;
+    }
 }
 
 @include sm{

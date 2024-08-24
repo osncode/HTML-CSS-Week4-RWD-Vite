@@ -1,0 +1,24 @@
+.bg-blog{
+    background: $secondary;
+    padding: 13px 0px;
+}
+
+.blog-nav a{
+    color: #FFF;
+    font-size: 20px;
+} 
+
+.blog-nav a:hover{font-weight: bold;}
+
+.blog{
+    .title h1{
+        font-size: 48px;
+        font-weight: bold;
+        border-left: 8px solid #9F1213;
+        padding-left: 16px;
+        margin-top: 96px;
+        margin-bottom: 32px;
+    }
+}
+
+

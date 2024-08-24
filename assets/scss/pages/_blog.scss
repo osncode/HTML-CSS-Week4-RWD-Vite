@@ -31,6 +31,10 @@
         height: 100%;
     }
 }
+.blog-card-position{
+    flex-direction: column;
+    height: 100%;
+}
 
 .blog-card{
     width: calc(50% - 12px);
@@ -60,8 +64,6 @@
 .blog-body{
     font-size: 20px;
     color: #555555;
-    margin-bottom: 102px;
-    position: relative;
     a{
         color: #555555;
         display: none;
@@ -69,6 +71,7 @@
 }
 
 .blog-more-link{
+    margin-top: auto;
     text-align: right;
     a{
         color: $secondary;
@@ -93,7 +96,6 @@
         font-size: 16px;
     }
     .blog-body{
-        margin-bottom: 0px;
         a{
             display: inline-block;
         }

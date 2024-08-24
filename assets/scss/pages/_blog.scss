@@ -27,7 +27,9 @@
 
 .blog-img{
     width: calc(50% - 12px);
+    aspect-ratio: 1.6/1;
     img{
+        width: 100%;
         height: 100%;
     }
 }
@@ -99,7 +101,6 @@
         a{
             display: inline-block;
         }
-        
     }
     .blog-more-link{
         display: none;

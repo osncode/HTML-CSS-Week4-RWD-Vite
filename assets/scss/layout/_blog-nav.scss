@@ -1,0 +1,17 @@
+.bg-blog{
+    background: $secondary;
+    padding: 13px 0px;
+}
+
+.blog-nav a{
+    color: #FFF;
+    font-size: 20px;
+} 
+
+.blog-nav a:hover{font-weight: bold;}
+
+@include md{
+    .bg-blog{
+        display: none;
+    }
+}

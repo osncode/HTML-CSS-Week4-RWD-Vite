@@ -115,11 +115,13 @@
     .blog-body{
         display: none;
     }
-    .blog-img, .blog-card{
+    .blog-img{
+        margin-bottom: 8px;
         width: 100%;
     }
     .blog-card{
         margin-left: 0px;
+        width: 100%;
     }
     .blog-position{
         flex-direction: column;

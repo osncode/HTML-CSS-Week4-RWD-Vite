@@ -53,6 +53,14 @@
     text-align: left;
 }
 
+.h-100{
+    height: 100%;
+}
+
+.h-auto{
+    height: auto;
+}
+
 .pt-8{
     padding-top: 8px;
 }
@@ -119,6 +127,10 @@
 
 .mt-auto{
     margin-top: auto;
+}
+
+.mb-auto{
+    margin-bottom: auto;
 }
 
 .mb-8{

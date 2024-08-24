@@ -42,31 +42,6 @@
             background:$style-warm-tone;
         }
     }
-    .paping{
-        margin-bottom: 80px;
-        
-        a{
-            border: 1px solid #555555;
-            color:#555555;
-            font-size: 19px;
-        }
-         
-        a:first-child,a:last-child{
-            // 需扣掉 border 1px
-            padding: 10px 11px;
-        }
-        a:last-child{
-            background: #F2F2F2;
-        }
-        a:nth-child(n+2):nth-child(-n+6){
-            // 需扣掉 border 1px
-            padding: 10px 15px;
-        }
-        a:nth-child(n+2):nth-child(-n+6):hover{
-            color: #FFF;
-            background: #000;
-        }
-    }
 }
 
 @include lg{
@@ -74,9 +49,6 @@
         .card{
             max-width: calc(50% - 12px);
             margin-bottom: 40px;
-        }
-        .paping{
-            margin-top: 40px;
         }
     }
 }
@@ -92,12 +64,6 @@
         .card{
             max-width: 100%;
             margin-bottom: 24px;
-        }
-        .paping{
-            margin-bottom: 64px;
-            a{
-                font-size: 16px;
-            }
         }
     }
 }

@@ -1,6 +1,7 @@
 .outlet-detail{
-    // 加上 .card-detail a margin-bottom = 80px;
+    // 加上 .card margin-bottom = 80px;
     padding-bottom: 32px;
+    
     .title h1{
         font-size: 48px;
         font-weight: bold;
@@ -10,11 +11,14 @@
         margin-bottom: 32px;
     }
     .city-item{
-        font-size: 24px;
+        display: flex;
+        align-items: center;
+        max-width: calc(33.3333% - 16px);
         margin-bottom: 40px;
     }
     label{
-        margin-right: 16px;
+        font-size: 24px;
+        width: calc(25% + 24px);
     }
     select{
         // 移除下拉選單箭頭樣式
@@ -26,28 +30,40 @@
         color: #495057;
         opacity: 0.75;
         font-size: 18px;
-        width: 298px;
+        margin-left: auto;
+        width: calc(75% - 24px);
         height: 38px;
         border: 1px solid #CED4DA;
         padding: 0px 12px;
     }
-    .card-list{
-        flex-wrap: wrap;
+    .card{
+        padding: 0px 12px;
         margin-bottom: 48px;
     }
-    .card{
-        max-width: 538px;
-        padding: 0px 12px;
+    .card-detail{
+        margin-top: auto;
+        width: 100%;
     }
-    h2{
+    
+    .card-detail a{
+        padding: 16px 0px;
+        background: #000;
+        color: #FFF;
         border: 1px solid #00000020;
+        font-size: 19px;  
+    }
+
+    h2{
+        border-bottom: 1px solid #00000020;
         color: #212529;
         font-size: 24px;
         padding: 8px 12px;
+        margin-bottom: 16px;
     }
     .card-body{
+        max-width: calc(41.6666% - 12px);
+        height: 100%;
         border: 1px solid #00000020;
-        padding: 16px 12px;
         span{
             font-size: 20px;
             margin-left: 10px;
@@ -55,17 +71,22 @@
         img{
             padding-bottom: 5px;
         }
-        li{
-            margin-bottom: 8px;
-        }
+
+    }
+    .card-desc{
+        padding: 0px 12px 8px 12px;
         a{color: #212529;}
         a:hover{
             font-weight: bold;
         }
     }
-    .map img{
+   
+    .outlet-detail-map{
         border: 1px solid #CED4DA;
-        max-width: 758px;
-        height: 100%;
+        max-width: calc(58.3333% - 12px);
+        margin-left: auto;
+        img{
+            height: 100%;
+        }
     }
 }

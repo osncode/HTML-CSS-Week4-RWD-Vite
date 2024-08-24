@@ -1,9 +1,7 @@
 .outlet{
     // 加上 .card margin-bottom = 80px;
     padding-bottom: 32px;
-    .width{
-        max-width: 33.3333%;
-    }
+    
     .title h1{
         font-size: 48px;
         font-weight: bold;
@@ -13,11 +11,14 @@
         margin-bottom: 32px;
     }
     .city-item{
-        font-size: 24px;
+        display: flex;
+        align-items: center;
+        max-width: calc(33.3333% - 16px);
         margin-bottom: 40px;
     }
     label{
-        margin-right: 16px;
+        font-size: 24px;
+        width: calc(25% + 24px);
     }
     select{
         // 移除下拉選單箭頭樣式
@@ -29,7 +30,8 @@
         color: #495057;
         opacity: 0.75;
         font-size: 18px;
-        width: 298px;
+        margin-left: auto;
+        width: calc(75% - 24px);
         height: 38px;
         border: 1px solid #CED4DA;
         padding: 0px 12px;
@@ -84,6 +86,12 @@
 
 @include lg{
     .outlet{
+        .city-item{
+            max-width: 50%;
+        }
+        select{
+            width: calc(80% - 12px);
+        }
         .card{
             max-width: 50%;
             margin-bottom: 24px;
@@ -95,8 +103,8 @@
 
 @include md{
     .outlet{
-        .card{
+        .city-item, .card{
             max-width: 100%;
-        }
+        }        
     }
 }

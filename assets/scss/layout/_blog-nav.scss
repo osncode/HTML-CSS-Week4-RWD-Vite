@@ -9,3 +9,8 @@
 } 
 
 .blog-nav a:hover{font-weight: bold;}
+
+.search-icon img{
+    transition: 0.2s;
+}
+.search-icon img:hover{transform: scale(1.1);}

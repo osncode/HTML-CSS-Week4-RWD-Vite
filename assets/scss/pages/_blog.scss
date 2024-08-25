@@ -115,7 +115,9 @@
     .blog-position{
         flex-direction: column;
     }
-    .bg-blog{
+
+    .blog-md-display-none .bg-blog{
         display: none;
     }
+
 }

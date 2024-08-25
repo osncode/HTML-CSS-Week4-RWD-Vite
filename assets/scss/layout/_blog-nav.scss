@@ -9,9 +9,3 @@
 } 
 
 .blog-nav a:hover{font-weight: bold;}
-
-@include md{
-    .bg-blog{
-        display: none;
-    }
-}

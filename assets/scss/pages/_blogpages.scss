@@ -98,3 +98,39 @@
         height: 16px;
     }
 }
+
+@include md{
+    .tags-list, .tags-list-title{
+        font-size: 16px;
+    }
+    .tags-list-title img{
+        width: 19px;
+        height: 14px;
+        margin-right: 2px;
+    }
+}
+
+@include sm{
+    .tags-list, .share-link, .change-page{
+        display: none;
+    }
+    .blogpages-list{
+        width: 100%;
+    }
+    .blogpages-sm-display .blog-nav{
+        a{
+            font-size: 16px;
+        }
+        .search-icon img{
+            display: none;
+        }
+        .ml-48{
+            margin-left: 0px;
+        }
+// 當 .search-icon img {display: none} 避免空間留白影響美觀
+        .blog-nav-list{
+            width: 100%;
+            justify-content: space-around;
+        }
+    } 
+}

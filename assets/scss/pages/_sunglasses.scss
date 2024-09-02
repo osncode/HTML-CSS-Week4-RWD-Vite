@@ -19,6 +19,11 @@
     .card{
         max-width: calc(33.3333% - 12px);
         margin-bottom: 80px;
+        a{
+            overflow:hidden;
+        }
+        img{transition: 0.2s;}
+        img:hover{transform: scale(1.1);}
     }
     .model{
         font-size: 24px;

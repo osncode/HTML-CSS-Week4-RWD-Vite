@@ -1,3 +1,6 @@
 import './assets/scss/all.scss';
 
-console.log("Hello world!");
+// AOS 初始化
+AOS.init();
+
+// console.log("Hello world!");

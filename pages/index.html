@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>第四週主線任務-RWD-Vite-v1</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -28,7 +29,8 @@
       <div class="row">
           <div class="col d-flex flex-column align-items-center text-align-center">
               <h2 class="h2">用專業的心，做專業的事</h2>
-              <ul class="intro-list d-flex flex-wrap justify-content-between">
+              <ul class="intro-list d-flex flex-wrap justify-content-between" data-aos="fade-up"
+              data-aos-duration="500" data-aos-anchor-placement="center-bottom">
                   <li class="card">
                       <img src="../assets/images/home-section2-1.png" alt="section2-1 image">
                       <h3 class="h3">單一價格</h3>
@@ -62,7 +64,8 @@
             <div class="classic-title text-align-center">
                 <h2 class="mb-48">經典系列鏡框</h2>
             </div>
-            <ul class="classic-list d-flex justify-content-between">
+            <ul class="classic-list d-flex justify-content-between" data-aos="fade-up"
+            data-aos-duration="500" data-aos-anchor-placement="center-bottom">
                 <li class="card">
                     <img src="../assets/images/home-section3-1.png" alt="section3-1 image">
                     <h3>OPTICAL</h3>
@@ -84,7 +87,8 @@
 <div class="co-branded bg-co-branded">
   <div class="container">
     <div class="row">
-        <div class="col d-flex flex-column align-items-center">
+        <div class="col d-flex flex-column align-items-center" data-aos="fade-up"
+        data-aos-duration="500" data-aos-anchor-placement="center-bottom">
             <div class="title-co-branded">
                 <h2>聯名設計鏡框</h2>
             </div>
@@ -111,7 +115,8 @@
                 <h2>顧客推薦</h2>
             </div>
             <ul class="recommend-list d-flex justify-content-between">
-                <li class="card">
+                <li class="card" data-aos="fade-right"
+                data-aos-duration="500" data-aos-anchor-placement="center-bottom">
                     <div class="card-body">
                         <div class="card-desc">
                             <img class="mb-16" src="../assets/images/home-section5-1.png" alt="home-section5-1 image">
@@ -121,7 +126,8 @@
                         <time class="date">2021/06/20</time>
                     </div>
                 </li>
-                <li class="card">
+                <li class="card" data-aos="fade-left"
+                data-aos-duration="500" data-aos-anchor-placement="center-bottom">
                     <div class="card-body">
                         <div class="card-desc">
                             <img class="mb-16" src="../assets/images/home-section5-2.png" alt="home-section5-2 image">
@@ -131,7 +137,8 @@
                         <time class="date">2021/04/18</time>
                     </div>
                 </li>
-                <li class="card">
+                <li class="card" data-aos="fade-left"
+                data-aos-duration="500" data-aos-anchor-placement="center-bottom">
                     <div class="card-body">
                         <div class="card-desc">
                             <img class="mb-16" src="../assets/images/home-section5-3.png" alt="home-section5-3 image">
@@ -141,7 +148,8 @@
                         <time class="date">2020/12/25</time>
                     </div>
                 </li>
-                <li class="card">
+                <li class="card" data-aos="fade-right"
+                data-aos-duration="500" data-aos-anchor-placement="center-bottom">
                     <div class="card-body">
                         <div class="card-desc">
                             <img class="mb-16" src="../assets/images/home-section5-4.png" alt="home-section5-4 image">
@@ -193,5 +201,6 @@
 </div>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
